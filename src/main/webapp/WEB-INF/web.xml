@@ -5,10 +5,23 @@
          version="4.0">
     <servlet>
         <servlet-name>FirstServlet</servlet-name>
-        <servlet-class>letscode.MainServlet</servlet-class>
+        <servlet-class>Servlets.MainServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
-        <url-pattern>/my-servlet</url-pattern>
+        <url-pattern>/first_servlet</url-pattern>
+    </servlet-mapping>
+
+<!--    <servlet>-->
+<!--        <servlet-name>FirstServlet</servlet-name>-->
+<!--        <servlet-class>Servlets.FileServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>FirstServlet</servlet-name>-->
+<!--        <url-pattern>/file-servlet</url-pattern>-->
+<!--    </servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
 </web-app>
