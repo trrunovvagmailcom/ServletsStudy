@@ -27,7 +27,9 @@ public class FileServlet extends HttpServlet {
                 log(authorName);
             } else {
                 part.write(UUID.randomUUID().toString() + part.getSubmittedFileName());
+                log("File has loaded");
             }
         }
+        resp.sendRedirect("/server/first_servlet");
     }
 }
